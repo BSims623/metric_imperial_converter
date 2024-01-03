@@ -1,3 +1,3 @@
 # Metric-Imperial Converter
 
-This is the boilerplate for the Metric-Imperial Converter project. Instructions for building your project can be found at https://www.freecodecamp.org/learn/quality-assurance/quality-assurance-projects/metric-imperial-converter
+This is one of the freeCodeCamp projects to earn your Quality Assurance Certification. In this project one builds a full stack JavaScript application and then writes tests using chai.
