@@ -54,4 +54,20 @@ suite("Functional Tests", function () {
         done();
       });
   });
+  test("should convert with no number such as kg: GET request to /api/convert", function (done) {
+    chai
+      .request(server)
+      .get("/api/convert?input=kg")
+      .end(function (err, res) {
+        assert.equal(res.status, 200);
+        assert.deepEqual(res.body, {
+          initNum: 1,
+          initUnit: "kg",
+          returnNum: 2.20462,
+          returnUnit: "lbs",
+          string: "1 kilograms converts to 2.20462 pounds",
+        });
+        done();
+      });
+  });
 });
